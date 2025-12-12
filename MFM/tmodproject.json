@@ -1,0 +1,8 @@
+{
+  "rootNamespace": "MFM",
+  "fileMap": {
+    "Content\\Items\\Wire.cs": "MFM.Content.Items",
+    "Content\\Items\\portal_a.cs": "MFM.Content.Items",
+    "Content\\Tiles\\portal_a.cs": "MFM.Content.Tiles"
+  }
+}
