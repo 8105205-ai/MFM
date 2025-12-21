@@ -1,0 +1,23 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	s1: {
+		DisplayName: s1
+		Tooltip:
+			'''
+			Template of an item
+			Replacing this tooltip is duty 
+			It's snowing on Mt.Fuji
+			'''
+	}
+
+	Wire: {
+		DisplayName: Wire
+		Tooltip: ""
+	}
+
+	portal_a: {
+		DisplayName: Portal
+		Tooltip: "676767"
+	}
+}

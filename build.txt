@@ -1,0 +1,3 @@
+displayName = first mode
+author = I
+version = 0.1
