@@ -1,0 +1,6 @@
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.csproj.AssemblyReference.cache
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.AssemblyInfoInputs.cache
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.AssemblyInfo.cs
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.csproj.CoreCompileInputs.cache
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.sourcelink.json

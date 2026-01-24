@@ -1,8 +1,15 @@
 {
-  "rootNamespace": "MFM",
-  "fileMap": {
-    "Content\\Items\\Wire.cs": "MFM.Content.Items",
-    "Content\\Items\\portal_a.cs": "MFM.Content.Items",
-    "Content\\Tiles\\portal_a.cs": "MFM.Content.Tiles"
-  }
+    "rootNamespace": "MFM",
+    "fileMap": {
+        "Content\\Items\\Wire.cs": "MFM.Content.Items",
+        "Content\\Items\\portal_a.cs": "MFM.Content.Items",
+        "Content\\Tiles\\portal_a.cs": "MFM.Content.Tiles",
+        "Content\\Liqs\\Oil.cs": "MFM.Content.Liqs",
+        "Content\\Maunts\\DrillMach.cs": "MFM.Content.Maunts",
+        "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "MFM.obj.Debug.net8_0",
+        "obj\\Debug\\net8.0\\MFM.AssemblyInfo.cs": "MFM.obj.Debug.net8_0"
+    },
+    "dependencies": [
+        "ModLiquidLib"
+    ]
 }
