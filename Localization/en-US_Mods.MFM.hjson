@@ -1,1 +1,28 @@
-{}
+Liquids.MyLiq.MapEntry: My Liq
+
+Items: {
+	LiqSp: {
+		DisplayName: Liq Sp
+		Tooltip: ""
+	}
+
+	portal_a: {
+		DisplayName: portal_a
+		Tooltip: ""
+	}
+
+	s1: {
+		DisplayName: s1
+		Tooltip: ""
+	}
+
+	Wire: {
+		DisplayName: Wire
+		Tooltip: ""
+	}
+
+	LiquidBucket: {
+		DisplayName: LiquidBucket
+		Tooltip: ""
+	}
+}

@@ -7,6 +7,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
+using ModLiquidLib.ModLoader;
+using MFM.Content.Liqs;
 
 namespace MFM.Content.Items
 {
@@ -26,10 +28,9 @@ namespace MFM.Content.Items
 
         public override bool? UseItem(Player player)
         {
-            if (Main.myPlayer == player.whoAmI)
-            {
-                
-            }
+            Tile tile = Main.tile[Player.tileTargetX, Player.tileTargetY];
+            tile.LiquidType = LiquidID.Water;
+            tile.LiquidAmount = byte.MaxValue;
             return true;
         }
     }
