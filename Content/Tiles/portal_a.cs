@@ -32,8 +32,6 @@ namespace MFM.Content.Tiles
         public override void MouseOver(int i, int j)
         {
             Player player = Main.LocalPlayer;
-            
-            // Показываем курсор взаимодействия
             player.cursorItemIconEnabled = true;
             player.cursorItemIconID = ModContent.ItemType<Items.portal_a>();
         }
