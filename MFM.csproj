@@ -12,6 +12,9 @@
 			<HintPath>..\ModLiquidLib\bin\Debug\net8.0\ModLiquidLib.dll</HintPath>
 		</Reference>
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Content\ModPlayer\" />
+	</ItemGroup>
 
 	<!-- References -->
 

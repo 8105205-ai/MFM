@@ -25,4 +25,19 @@ Items: {
 		DisplayName: LiquidBucket
 		Tooltip: ""
 	}
+
+	Connector: {
+		DisplayName: Connector
+		Tooltip: ""
+	}
+
+	Cons: {
+		DisplayName: Cons
+		Tooltip: ""
+	}
+
+	Gen: {
+		DisplayName: Gen
+		Tooltip: ""
+	}
 }

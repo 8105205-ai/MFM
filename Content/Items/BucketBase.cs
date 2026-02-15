@@ -5,7 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ModLiquidExampleMod.Content.Items
+namespace MFM.Content.Items
 {
    
     public abstract class BucketBase : ModItem
@@ -42,10 +42,10 @@ namespace ModLiquidExampleMod.Content.Items
                     return;
                 }
                 if (player.noBuilding ||
-                    !(player.position.X / 16f - (float)Player.tileRangeX - (float)Item.tileBoost <= (float)Player.tileTargetX) ||
-                    !((player.position.X + (float)player.width) / 16f + (float)Player.tileRangeX + (float)Item.tileBoost - 1f >= (float)Player.tileTargetX) ||
-                    !(player.position.Y / 16f - (float)Player.tileRangeY - (float)Item.tileBoost <= (float)Player.tileTargetY) ||
-                    !((player.position.Y + (float)player.height) / 16f + (float)Player.tileRangeY + (float)Item.tileBoost - 2f >= (float)Player.tileTargetY))
+                    !(player.position.X / 16f - Player.tileRangeX - Item.tileBoost <= Player.tileTargetX) ||
+                    !((player.position.X + player.width) / 16f + Player.tileRangeX + Item.tileBoost - 1f >= Player.tileTargetX) ||
+                    !(player.position.Y / 16f - Player.tileRangeY - Item.tileBoost <= Player.tileTargetY) ||
+                    !((player.position.Y + player.height) / 16f + Player.tileRangeY + Item.tileBoost - 2f >= Player.tileTargetY))
                 {
                     return;
                 }

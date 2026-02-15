@@ -4,3 +4,14 @@ C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\ne
 C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.AssemblyInfo.cs
 C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.csproj.CoreCompileInputs.cache
 C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.sourcelink.json
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\bin\Debug\net8.0\MFM.deps.json
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\bin\Debug\net8.0\MFM.dll
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\bin\Debug\net8.0\MFM.pdb
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\bin\Debug\net8.0\ModLiquidLib.dll
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\bin\Debug\net8.0\ModLiquidLib.pdb
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\bin\Debug\net8.0\ModLiquidLib.xml
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.csproj.Up2Date
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.dll
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\refint\MFM.dll
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\MFM.pdb
+C:\Users\AArt\Documents\My Games\Terraria\tModLoader\ModSources\MFM\obj\Debug\net8.0\ref\MFM.dll

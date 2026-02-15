@@ -1,5 +1,4 @@
 ﻿using MFM.Content.Liqs;
-using ModLiquidExampleMod.Content.Items;
 using ModLiquidLib.ID;
 using ModLiquidLib.ModLoader;
 using Terraria.ID;
