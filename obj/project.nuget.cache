@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "re2ucFd//BA=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\AArt\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\MFM\\MFM.csproj",
+  "dgSpecHash": "it8zgRG+n5c=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\antonovam.27\\Source\\Repos\\MFM\\MFM.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Невозможно прочитать сведения о проекте для \"MFM\": Идентификатор платформы \"\" недопустим.",
+      "projectPath": "C:\\Users\\antonovam.27\\Source\\Repos\\MFM\\MFM.csproj",
+      "filePath": "C:\\Users\\antonovam.27\\Source\\Repos\\MFM\\MFM.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
