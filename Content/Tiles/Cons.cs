@@ -17,11 +17,14 @@ namespace MFM.Content.Tiles
         {
             base.SetStaticDefaults();
             power = -5;
+            name = "Cons"; 
             DustType = DustID.Stone;
             AddMapEntry(new Color(200, 200, 200));
             TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3);
+            Main.tileFrameImportant[Type] = true;
+            Main.tileSolid[Type] = false;
+            TileID.Sets.HasOutlines[Type] = false;
             TileObjectData.addTile(Type);
-            TileID.Sets.HasOutlines[Type] = true;
         }
     }
 }

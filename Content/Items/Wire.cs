@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace MFM.Content.Items{
 
-public class Wire: ModItem
+public class Wire: ModItem //d
 {
     public override void SetDefaults()
     {

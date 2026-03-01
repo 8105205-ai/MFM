@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace MFM.Content.Items
 {
-    public class portal_a : ModItem
+    public class portal_a : ModItem //d
     {
         public override void SetDefaults()
         {

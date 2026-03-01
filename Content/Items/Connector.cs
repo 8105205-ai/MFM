@@ -29,35 +29,41 @@ namespace MFM.Content.Items
             Item.autoReuse = false;
         }
 
-        public override bool AltFunctionUse(Player player)
+        public override bool AltFunctionUse(Player player) // возможность использования на пкм
         {
             return true;
         }
 
-        public override bool? UseItem(Player player)
+        public override bool? UseItem(Player player) // логика использования прдемета
         {
-            if (Main.netMode == NetmodeID.MultiplayerClient || player.whoAmI != Main.myPlayer)
+            if (Main.netMode == NetmodeID.MultiplayerClient || player.whoAmI != Main.myPlayer) // чтобы использовалось только на клиенте
                 return false;
-            foreach (Point16 point in ModContent.GetInstance<ElSys>().devices.Keys) //del
+            foreach (Device dev in ModContent.GetInstance<ElSys>().devices.Values) //del
             {
-                Main.NewText(point.X + " " + point.Y); //del
+                Main.NewText(dev.name+dev.id+": "+dev.pos.X + " " + dev.pos.Y); //del
             }
-            Device device = DevUnderCursor();
-            if (player.altFunctionUse == 2)
+            Device device = DevUnderCursor(); // поиск устройства под курсором
+            if (player.altFunctionUse == 2) // верно если ПКМ
             {
+                // логика соединения устройств
                 if (device == null) { return false; }
                 if (choosenDevice == null) choosenDevice = device;
-                else if (device != choosenDevice) device.Connect(choosenDevice);
+                else if (device != choosenDevice)
+                {
+                    device.Connect(choosenDevice);
+                    choosenDevice = null;
+                }
                 else choosenDevice = null;
                 return true;
             }
             if (device == null) return false;
-            float sumpow = device.netPower();
+            Main.NewText(device.connected.Count); //del
+            float sumpow = device.netPower(); // мощность сети
             Main.NewText(sumpow);
             return true;
         }
 
-        private Device DevUnderCursor()
+        private Device DevUnderCursor() // логика поиска устройства под курсором
         {
             int i = Player.tileTargetX;
             int j = Player.tileTargetY;

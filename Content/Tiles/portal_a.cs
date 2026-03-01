@@ -6,7 +6,7 @@ using Terraria.ObjectData;
 
 namespace MFM.Content.Tiles
 {
-    public class portal_a : ModTile
+    public class portal_a : ModTile //d
     {
         public override void SetStaticDefaults() {
             Main.tileFrameImportant[Type] = true;

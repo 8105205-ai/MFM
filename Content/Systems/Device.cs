@@ -14,17 +14,31 @@ namespace MFM.Content.Systems
         public float power;
         public List<Device> connected = new List<Device>();
         public Point16 pos;
+        public int id; 
+        public static int usage = 0; 
+        public String name; 
 
-        public Device(float power, Point16 pos)
+        public Device(float power, Point16 pos, String name) 
         {
             this.power = power;
             this.pos = pos;
+            id = usage; 
+            usage++; 
+            this.name = name; 
         }
 
         public void Connect(Device device)
         {
-            if (connected == null || !connected.Contains(device)) connected.Add(device);
-            else if (connected.Contains(device)) connected.Remove(device);
+            if (connected == null || !connected.Contains(device))
+            {
+                connected.Add(device);
+                device.connected.Add(this);
+            }
+            else if (connected.Contains(device))
+            {
+                connected.Remove(device);
+                device.connected.Remove(this);
+            }
         }
 
         //public void Disconnect(Device device)
@@ -32,18 +46,45 @@ namespace MFM.Content.Systems
         //    connected.Remove(device);
         //}
 
-        public List<Device> allConected(List<Device> visited = null)
+        public List<Device> allConected()
         {
-            if (connected == null || connected.Count == 0) return new List<Device> {this};
-            List<Device> result = new List<Device>();
-            result.Add(this);
-            foreach (Device device in connected)
+            //if (connected == null || connected.Count == 0) return new List<Device> {this};
+            //List<Device> result = new List<Device>();
+            //result.Add(this);
+            //foreach (Device device in connected)
+            //{
+            //    if (visited != null && visited.Contains(device)) continue;
+            //    if (visited == null) visited = new List<Device>();
+            //    visited.Add(device);
+            //    result.AddRange(device.allConected(result.Union(visited).ToList()));
+            //}
+            //return result;
+            HashSet<Device> visited = new HashSet<Device>();
+
+            // Очередь для обхода
+            Queue<Device> queue = new Queue<Device>();
+
+            // Начинаем с текущего устройства
+            queue.Enqueue(this);
+            visited.Add(this);
+
+            while (queue.Count > 0)
             {
-                if (visited != null && visited.Contains(device)) continue;
-                visited.Add(device);
-                result.AddRange(device.allConected(result.Union(visited).ToList()));
+                Device current = queue.Dequeue();
+
+                foreach (Device neighbor in current.connected)
+                {
+                    // Если мы еще не были у этого соседа — добавляем его в список
+                    if (!visited.Contains(neighbor))
+                    {
+                        visited.Add(neighbor);
+                        queue.Enqueue(neighbor);
+                    }
+                }
             }
-            return result;
+
+            // Превращаем HashSet обратно в список и возвращаем
+            return visited.ToList();
         }
 
         public float netPower()
@@ -53,7 +94,7 @@ namespace MFM.Content.Systems
             foreach (Device device in con)
             {
                 spower += device.power;
-                Main.NewText(device.power); //del
+                Main.NewText(device.name+device.id+": "+device.power); //del
             }
             return spower;
         }
